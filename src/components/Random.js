@@ -24,7 +24,7 @@ const Random =() => {
     fetchData()
   },[])
   return (
-    <div className=" bg-green-500 w-6/12 text-center  py-2 gap-y-1.5 rounded-md mx-auto flex-col items-center">
+    <div className=" bg-green-500 w-10/12 md:w-8/12 lg:w-6/12 text-center  py-2 gap-y-1.5 rounded-md mx-auto flex-col items-center">
        <h1 className='font-semibold text-xl uppercase underline underline-offset-4'>a random gif</h1>
         
         <div className='w-full flex-row justify-center min-h-[100px]'>
@@ -33,7 +33,7 @@ const Random =() => {
           }`
         </div>
 
-       <button onClick={clickHandler} className='bg-white w-10/12 font-medium capitalize  rounded-md'>Generate</button>
+       <button onClick={clickHandler} className='bg-white w-10/12 font-medium capitalize  rounded-md bg-opacity-70 py-2'>Generate</button>
     </div>
   )
 }

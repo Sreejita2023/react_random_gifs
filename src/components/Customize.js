@@ -39,18 +39,18 @@ const Customize =()=>{
     fetchData()
   },[])
   return (
-    <div className=" bg-green-500 w-6/12 text-center  py-2 gap-y-1.5 rounded-md mx-auto flex-col items-center">
-       <h1 className='font-semibold text-xl uppercase underline underline-offset-4'>a random gif</h1>
+    <div className=" bg-red-500 w-10/12 md:w-8/12 lg:w-6/12 text-center  py-2 gap-y-1.5 rounded-md mx-auto flex-col items-center mt-5 ">
+       <h1 className='font-semibold text-xl uppercase underline underline-offset-4'>have your own gif</h1>
         
         <div className='w-full flex-row justify-center min-h-[100px]'>
         `{
              loading?<Spinner/> : <img src={gifs} width="300" height="350" className='mx-auto overflow-y-hidden'/>
           }`
         </div>
-       <div>
-          <input type='text' name='gif_type' onChange={changeHandler} value={values.gif_type}/>
+       <div className='w-full pb-4'>
+          <input type='text' className='w-6/12 focus:outline-none rounded-sm py-1 px-4' name='gif_type' onChange={changeHandler} value={values.gif_type}/>
        </div>
-       <button onClick={clickHandler} className='bg-white w-10/12 font-medium capitalize  rounded-md'>Generate</button>
+       <button onClick={clickHandler} className='bg-black w-10/12 bg-opacity-50 font-medium capitalize  rounded-md text-white py-2'>Generate</button>
     </div>
   )
 }

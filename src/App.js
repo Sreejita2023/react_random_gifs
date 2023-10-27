@@ -5,7 +5,7 @@ import Random from "./components/Random";
 import Customize from "./components/Customize";
 
 export default function App() {
-  return <div className="background w-full min-h-screen max-h-max flex-col items-center  ">
+  return <div className="background w-full min-h-screen max-h-max flex-col items-center pb-4 ">
       <div className="py-4 w-full"><Head/></div>
       <div><Random/></div>
       <div> <Customize/> </div>
